@@ -16,14 +16,20 @@ app.add_middleware(
 
 email = "newson190@gmail.com"
 github_url = "https://github.com/Slogan101/hng0"
-current_datetime = dt.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+current_datetime = dt.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
-# dt.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%f")[:-2] + "Z"
 
-#dt.now(timezone.utc).isoformat()
+dt.now(timezone.utc).isoformat(timespec="seconds") + "Z"
 
-# dt.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+dt.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+
+
+
+
+
 
 
 
