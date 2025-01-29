@@ -20,9 +20,9 @@ current_datetime = dt.now(timezone.utc).isoformat(timespec="seconds").replace("+
 
 
 
-dt.now(timezone.utc).isoformat(timespec="seconds") + "Z"
+# dt.now(timezone.utc).isoformat(timespec="seconds") + "Z"
 
-dt.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+# dt.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 
