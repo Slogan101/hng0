@@ -16,7 +16,9 @@ app.add_middleware(
 
 email = "newson190@gmail.com"
 github_url = "https://github.com/Slogan101/hng0.git"
-current_datetime = dt.now(timezone.utc).isoformat()
+current_datetime = dt.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
 
 
 @app.get("/", status_code=status.HTTP_200_OK)
