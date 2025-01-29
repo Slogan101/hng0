@@ -16,7 +16,6 @@ app.add_middleware(
 
 email = "newson190@gmail.com"
 github_url = "https://github.com/Slogan101/hng0"
-current_datetime = dt.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
 
@@ -38,7 +37,7 @@ current_datetime = dt.now(timezone.utc).isoformat(timespec="seconds").replace("+
 def get_details():
     return {
         "email": email,
-        "current_datetime": current_datetime,
+        "current_datetime": dt.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "github_url": github_url
     }
 
