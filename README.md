@@ -29,14 +29,14 @@ The API will be available at: http://127.0.0.1:8000
 
 Endpoint
 
-URL: /home
+URL: /
 
 Method: GET
 
 Description: Returns the current datetime in ISO 8601 format (UTC).
 
 Request Example: 
-GET /home HTTP/1.1
+GET / HTTP/1.1
 Host: 127.0.0.1:8000
 
 Response Example:
@@ -50,13 +50,13 @@ Response Example:
 Example Usage
 
 Using curl: 
-curl -X GET http://127.0.0.1:8000/home
+curl -X GET http://127.0.0.1:8000/
 
 Using Python requests:
 
 import requests
 
-response = requests.get("http://127.0.0.1:8000/home")
+response = requests.get("http://127.0.0.1:8000/")
 print(response.json())
 
 ## Hire Developers

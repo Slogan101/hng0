@@ -19,7 +19,7 @@ github_url = "https://github.com/Slogan101/hng0.git"
 current_datetime = dt.now(timezone.utc).isoformat()
 
 
-@app.get("/home", status_code=status.HTTP_200_OK)
+@app.get("/", status_code=status.HTTP_200_OK)
 def get_details():
     return {
         "email": email,
