@@ -35,11 +35,12 @@ Method: GET
 
 Description: Returns the current datetime in ISO 8601 format (UTC).
 
-Request Example
+Request Example: 
 GET /home HTTP/1.1
 Host: 127.0.0.1:8000
 
-Response Example
+Response Example:
+
 {
   "email": "newson190@gmail.com",
   "current_datetime": "2025-01-28T23:48:20.770009+00:00",
@@ -48,10 +49,11 @@ Response Example
 
 Example Usage
 
-Using curl
+Using curl: 
 curl -X GET http://127.0.0.1:8000/home
 
-Using Python requests
+Using Python requests:
+
 import requests
 
 response = requests.get("http://127.0.0.1:8000/home")
